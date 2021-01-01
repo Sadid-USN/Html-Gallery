@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+    
+   
+      <title>ГАЛЕРЕЯ МИР ЖИВОТНЫХ</title>
+    <script type="text/javascript" src="js/jgallery.min.js?v=2.2.1"></script>
+</head>
+ <body>
+     
+        
+       <h1>ФОТОГАЛЕРЕЯ ЖИВОТНЫХ</h1>
+       <p>Моя коллекция</p>
+       <div id="gallery"></div>
+     
+     
+    <script type="text/javascript">
+        document.querySelector('#gallery').appendChild(JGallery.create([{
+        title: 'КРАСИВЫЙ ФОН',
+        items: [
+            {
+                url: 'images/large/1.jpg',
+                thumbUrl: 'images/thumbs/1.jpg',
+                title: 'Рыбки',
+                hash: 'photo-1'
+            },
+            {
+                url: 'images/large/2.jpg',
+                thumbUrl: 'images/thumbs/2.jpg',
+                title: 'Мидуза',
+                hash: 'photo-2'
+            },
+            {
+                url: 'images/large/3.jpg',
+                thumbUrl: 'images/thumbs/3.jpg',
+                title: 'Осминог',
+                hash: 'photo-3'
+            },
+            {
+                url: 'images/large/4.jpg',
+                thumbUrl: 'images/thumbs/4.jpg',
+                title: 'Акула', 
+                hash: 'photo-4'
+            },
+            {
+                url: 'images/large/5.jpg',
+                thumbUrl: 'images/thumbs/5.jpg',
+                title: 'Немо рыба клоун', 
+                hash: 'photo-5'
+            },
+            {
+                url: 'images/large/6.jpg',
+                thumbUrl: 'images/thumbs/6.jpg',
+                title: 'Дельфин', 
+                hash: 'photo-6'
+            },
+            {
+                url: 'images/large/7.jpg',
+                thumbUrl: 'images/thumbs/7.jpg',
+                title: 'Лев', 
+                hash: 'photo-7'
+            },
+        ]
+    }, {
+        title: 'Водопад',
+        items: [
+            {
+                element: JGallery.createElement('<video src="video/Waterfall.mp4" loop autoplay/>'),
+                thumbElement: JGallery.createElement('<span>Waterfall</span>'),
+                title: 'Waterfall', 
+                hash: 'video'
+            },
+            {
+                element: JGallery.createElement('<span style="font-size: 10vmax">Waterfall</span>'),
+                thumbElement: JGallery.createElement('<span>Красота</span>'),
+                title: 'HTML',
+                hash: 'html'
+                
+            
+            }
+        ]
+    }]).getElement());
+        
+        JGallery.create(albums,{
+    "backgroundColor": 'silver',
+    "textColor": 'black'
+});
+
+      </script>
+      </body>
+      </html>
